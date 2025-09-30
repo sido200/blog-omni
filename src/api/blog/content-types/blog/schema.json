@@ -26,6 +26,24 @@
     },
     "content": {
       "type": "string"
+    },
+    "audio": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "files",
+        "audios"
+      ]
+    },
+    "Video": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "files",
+        "videos"
+      ]
     }
   }
 }
