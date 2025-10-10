@@ -6,10 +6,10 @@ export default [
     name: "strapi::cors",
     config: {
       enabled: true,
-      origin: "*", // allow everything
+      origin: ["https://omnicanal-dz.netlify.app"], // ✅ specify your frontend URL
       headers: ["*"],
       methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
-      credentials: false, // <- must be false when origin is "*"
+      credentials: true, // ✅ allow cookies/authorization headers
     },
   },
   "strapi::security",
