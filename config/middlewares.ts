@@ -1,4 +1,3 @@
-// config/middlewares.ts
 export default [
   "strapi::logger",
   "strapi::errors",
@@ -7,7 +6,7 @@ export default [
     config: {
       enabled: true,
       origin: ["https://omnicanal-dz.com", "https://www.omnicanal-dz.com"],
-      headers: ["*"],
+      headers: ["Content-Type", "Authorization", "Origin", "Accept"],
       methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
       credentials: true,
     },
